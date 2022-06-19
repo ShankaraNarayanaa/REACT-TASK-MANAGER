@@ -1,0 +1,55 @@
+{
+    "name": "Task Manager",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@ant-design/codemod-v4": "^1.1.0",
+        "@ant-design/compatible": "^1.0.8",
+        "@ant-design/icons": "^4.7.0",
+        "@craco/craco": "^6.3.0",
+        "antd": "^4.16.0",
+        "nanoid": "^3.1.29",
+        "prop-types": "^15.7.2",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-loading-skeleton": "^2.2.0",
+        "react-router-dom": "^5.2.1",
+        "react-scripts": "^4.0.3",
+        "react-trello": "^2.2.11"
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject",
+        "eslint": "eslint \"src/**/*.+(js|jsx)\"",
+        "eslint:fix": "eslint --fix \"src/**/*.+(js|jsx)\"",
+        "prettier": "prettier \"**/*.+(js|jsx|json|scss|css|md|html)\"",
+        "prettier:fix": "npm run prettier \"**/*.+(js|jsx|json|scss|css|md|html)\" -- --write",
+        "firebase-deploy": "npm run build && firebase deploy",
+        "prepare": "husky install",
+        "scriptname": "husky install"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^9.8.8",
+        "eslint": "^7.32.0",
+        "eslint-config-react-app": "^6.0.0",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "firebase": "^9.0.1",
+        "husky": "^7.0.4",
+        "lint-staged": "^11.1.2",
+        "postcss": "^7.0.39",
+        "prettier": "2.3.2",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16",
+        "webpack-bundle-analyzer": "^4.4.2"
+    },
+    "lint-staged": {
+        "*.{html,json,md,js,jsx}": "prettier --write"
+    }
+}
